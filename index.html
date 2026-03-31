@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium AI Prompt</title>
+
+<style>
+body{
+  margin:0;
+  background:black;
+  color:white;
+  font-family:sans-serif;
+}
+
+/* LOADER */
+#loader{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:999;
+}
+.loader-text{
+  font-size:36px;
+  text-shadow:0 0 20px cyan;
+}
+.line{
+  width:0;
+  height:4px;
+  background:cyan;
+  margin-top:10px;
+  transition:1s;
+}
+
+/* TITLE */
+.title{text-align:center;margin-top:20px;}
+.main-title{
+  font-size:26px;
+  color:cyan;
+  text-shadow:0 0 15px cyan;
+}
+.sub{font-size:14px;}
+
+/* INTRO */
+.intro{
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+/* GRID */
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:15px;
+  padding:15px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:10px;
+  border-radius:15px;
+  border:1px solid rgba(0,255,255,0.2);
+}
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* PROMPT FONT */
+.prompt{
+  font-size:12px;
+  margin-top:8px;
+  background:#000;
+  padding:8px;
+  border-radius:8px;
+  font-family:monospace;
+  letter-spacing:1px;
+}
+
+/* BUTTON */
+button{
+  margin-top:5px;
+  width:100%;
+  padding:8px;
+  border:none;
+  border-radius:8px;
+  background:cyan;
+  font-weight:bold;
+}
+
+/* ACTION BUTTON */
+.actions{
+  display:flex;
+  gap:5px;
+}
+.actions button{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,255,255,0.1);
+}
+.actions img{
+  width:18px;
+  height:18px;
+  filter:invert(1);
+}
+
+/* DESCRIBE */
+.describe{text-align:center;margin:30px;}
+.describe button{
+  background:linear-gradient(cyan,blue);
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text" id="typing"></div>
+  <div class="line" id="line"></div>
+</div>
+
+<!-- TITLE -->
+<div class="title">
+  <div class="main-title">𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐀𝐈 𝐏𝐑𝐎𝐌𝐓</div>
+  <div class="sub">ᴄʜᴀᴛɢᴩᴛ</div>
+</div>
+
+<!-- INTRO -->
+<div class="intro">
+𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗧𝗛𝗜𝗦 𝗪𝗘𝗕𝗦𝗜𝗧𝗘. 𝗖𝗢𝗣𝗬 𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟 𝗔𝗜 𝗣𝗥𝗢𝗠𝗣𝗧𝗦 𝗔𝗡𝗗 𝗖𝗥𝗘𝗔𝗧𝗘 𝗔𝗠𝗔𝗭𝗜𝗡𝗚 𝗜𝗠𝗔𝗚𝗘𝗦. 𝗦𝗖𝗥𝗢𝗟𝗟 𝗗𝗢𝗪𝗡.
+</div>
+
+<!-- CARD -->
+<div class="container">
+
+<div class="card">
+<img src="https://image2url.com/r2/default/images/1774850685036-3791febe-44d2-4f32-8fde-f211ff6296e2.png">
+
+<div class="prompt" id="p1">
+ᴜʟᴛʀᴀ-ᴄɪɴᴇᴍᴀᴛɪᴄ ꜰᴀɴᴛᴀꜱʏ ᴘᴏᴡᴇʀ ꜱᴄᴇɴᴇ, 3:4 ᴀꜱᴘᴇᴄᴛ ʀᴀᴛɪᴏ, ʜʏᴘᴇʀ-ʀᴇᴀʟɪꜱᴛɪᴄ 8ᴋ ʀᴇɴᴅᴇʀ, ᴜɴʀᴇᴀʟ ᴇɴɢɪɴᴇ 5 ꜱᴛʏʟᴇ.
+
+ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴀʟᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ꜰʟᴏᴀᴛɪɴɢ ᴍɪᴅ-ᴀɪʀ, ᴄᴏɴᴛʀᴏʟʟɪɴɢ ᴛᴡᴏ ᴍᴀꜱꜱɪᴠᴇ ᴛᴏʀɴᴀᴅᴏᴇꜱ ꜱɪᴅᴇ ʙʏ ꜱɪᴅᴇ - ᴏɴᴇ ɢʟᴏᴡɪɴɢ ɢᴏʟᴅᴇɴ, ᴛʜᴇ ᴏᴛʜᴇʀ ʙʀɪɢʜᴛ ᴡʜɪᴛᴇ ᴇɴᴇʀɢʏ.
+
+ꜰʀᴀᴍɪɴɢ: ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ-ᴀɴɢʟᴇ ᴘᴇʀꜱᴘᴇᴄᴛɪᴠᴇ, ᴍᴀᴋɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ʟᴏᴏᴋ ɢᴏᴅ-ʟɪᴋᴇ ᴀɴᴅ ᴅᴏᴍɪɴᴀɴᴛ.
+
+ᴘᴏꜱᴇ: ᴀʀᴍꜱ ꜱʟɪɢʜᴛʟʏ ᴇxᴛᴇɴᴅᴇᴅ, ᴄᴏɴᴛʀᴏʟʟɪɴɢ ᴛʜᴇ ᴛᴏʀɴᴀᴅᴏᴇꜱ ᴡɪᴛʜ ᴇɴᴇʀɢʏ ꜰʟᴏᴡ, ᴄᴏɴꜰɪᴅᴇɴᴛ ᴀɴᴅ ᴄᴀʟᴍ ᴇxᴘʀᴇꜱꜱɪᴏɴ.
+
+ʙᴀᴄᴋɢʀᴏᴜɴᴅ: ꜱᴛᴏʀᴍʏ ꜱᴋʏ, ᴅᴀʀᴋ ᴄʟᴏᴜᴅꜱ, ʟɪɢʜᴛɴɪɴɢ, ᴍᴀꜱꜱɪᴠᴇ ꜱᴄᴀʟᴇ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ.
+
+ᴇꜰꜰᴇᴄᴛꜱ: ꜱᴡɪʀʟɪɴɢ ᴡɪɴᴅ, ᴅᴇʙʀɪꜱ ꜰʟʏɪɴɢ, ɢʟᴏᴡɪɴɢ ᴇɴᴇʀɢʏ ᴛʀᴀɪʟꜱ, ꜱᴘᴀʀᴋꜱ, ᴍɪꜱᴛ, ᴘᴀʀᴛɪᴄʟᴇꜱ.
+
+ʟɪɢʜᴛɪɴɢ: ꜱᴛʀᴏɴɢ ᴄᴏɴᴛʀᴀꜱᴛ (ɢᴏʟᴅ + ᴡʜɪᴛᴇ ɢʟᴏᴡ ᴠꜱ ᴅᴀʀᴋ ꜱᴛᴏʀᴍ), ᴄɪɴᴇᴍᴀᴛɪᴄ ʜɪɢʜʟɪɢʜᴛꜱ.
+
+ᴍᴏᴏᴅ: ᴜɴꜱᴛᴏᴘᴘᴀʙʟᴇ ᴘᴏᴡᴇʀ, ᴅɪᴠɪɴᴇ ᴄᴏɴᴛʀᴏʟ, ᴇᴘɪᴄ ꜰᴀɴᴛᴀꜱʏ.
+
+ꜱᴛʏʟᴇ: ᴜʟᴛʀᴀ-ᴅᴇᴛᴀɪʟᴇᴅ, ᴄɪɴᴇᴍᴀᴛɪᴄ, ᴅʀᴀᴍᴀᴛɪᴄ, ʜɪɢʜ ꜱᴄᴀʟᴇ.
+--ᴀʀ 3:4
+</div>
+
+<button onclick="copyText('p2',this)">Copy</button>
+
+<div class="card">
+<img src="https://image2url.com/r2/default/images/1774876051231-1da7597d-2b48-4caa-ad36-158c33ebf4d3.png">
+
+<div class="prompt" id="p2">
+ᴜʟᴛʀᴀ ᴄɪɴᴇᴍᴀᴛɪᴄ ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ-ᴀɴɢʟᴇ ᴡɪᴅᴇ ᴘᴇʀꜱᴘᴇᴄᴛɪᴠᴇ  
+ʜʏᴘᴇʀ-ʀᴇᴀʟɪꜱᴛɪᴄ 8ᴋ ʀᴇɴᴅᴇʀ  
+
+ᴀᴄᴛɪᴏɴ ꜱʜᴏᴛ, ꜱᴘʀᴇᴀᴅɪɴɢ ᴀᴄʀᴏꜱꜱ ᴛʜᴇ ꜰʟᴏᴏʀ  
+
+ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ᴍᴀʟᴇ ɢᴀᴍɪɴɢ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴡᴇᴀʀɪɴɢ ᴛʜᴇ ᴄᴜꜱᴛᴏᴍ ᴅʀᴇꜱꜱ ᴀꜱ ᴜᴘʟᴏᴀᴅᴇᴅ ɪꜱ ꜱᴘʀɪɴᴛɪɴɢ ꜰᴏʀᴡᴀʀᴅ ᴡɪᴛʜ ᴏɴᴇ ᴋɴᴇᴇ ᴄʟᴏꜱᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜɴᴅ, ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴛɪᴏɴ ᴄᴀᴘᴛᴜʀᴇᴅ ᴍɪᴅ-ᴀᴄᴛɪᴏɴ  
+
+ʜɪꜱ ꜰʀᴏɴᴛ ʟᴇɢ ꜰᴏʀᴄᴇꜰᴜʟʟʏ ᴛᴏᴜᴄʜᴇꜱ ᴛʜᴇ ɢʀᴏᴜɴᴅ ᴄᴀᴜꜱɪɴɢ ᴠɪꜱɪʙʟᴇ ᴄʀᴀᴄᴋꜱ  
+
+ʜᴇ ɪꜱ ᴅᴜᴀʟ-ᴡɪᴇʟᴅɪɴɢ ʜᴇᴀᴠʏ ᴘɪꜱᴛᴏʟꜱ, ꜰɪʀɪɴɢ ʙᴏᴛʜ ɢᴜɴꜱ ᴡɪᴛʜ ɪɴᴛᴇɴꜱᴇ ʙʀɪɢʜᴛ ᴍᴜᴢᴢʟᴇ ꜰʟᴀꜱʜᴇꜱ ʟɪɢʜᴛɪɴɢ ᴜᴘ ᴛʜᴇ ᴅᴀʀᴋ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ  
+
+ᴅᴏᴢᴇɴꜱ ᴏꜰ ʙʀᴀꜱꜱ ʙᴜʟʟᴇᴛ ᴄᴀꜱɪɴɢꜱ ꜰʀᴏᴢᴇɴ ɪɴ ᴍɪᴅ-ᴀɪʀ, ꜱᴘᴀʀᴋꜱ ᴀɴᴅ ᴅᴇʙʀɪꜱ ꜰʟʏɪɴɢ ᴀʀᴏᴜɴᴅ  
+
+ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ: ᴀ ᴅɪʟᴀᴘɪᴅᴀᴛᴇᴅ ɪɴᴅᴜꜱᴛʀɪᴀʟ ᴡᴀʀᴇʜᴏᴜꜱᴇ ɪɴᴛᴇʀɪᴏʀ ᴘᴀʀᴛɪᴀʟʟʏ ᴏɴ ꜰɪʀᴇ, ᴡᴏᴏᴅᴇɴ ʙᴇᴀᴍꜱ ᴀɴᴅ ʙʀᴏᴋᴇɴ ꜱᴛʀᴜᴄᴛᴜʀᴇꜱ ʙᴜʀɴɪɴɢ  
+
+ꜱᴄᴀᴛᴛᴇʀᴇᴅ ᴅᴇʙʀɪꜱ, ᴄᴀʀᴅʙᴏᴀʀᴅ ʙᴏxᴇꜱ, ꜱʜᴀᴛᴛᴇʀᴇᴅ ᴍᴇᴛᴀʟ ᴘɪᴇᴄᴇꜱ, ᴅᴜꜱᴛ ᴘᴀʀᴛɪᴄʟᴇꜱ  
+
+ᴀ ʟᴀʀɢᴇ ʙʀᴏᴋᴇɴ ɪɴᴅᴜꜱᴛʀɪᴀʟ ᴡɪɴᴅᴏᴡ ʟᴇᴛꜱ ɪɴ ᴅʀᴀᴍᴀᴛɪᴄ ᴅɪꜰꜰᴜꜱᴇᴅ ᴅᴀʏʟɪɢʜᴛ ᴍɪxᴇᴅ ᴡɪᴛʜ ᴏʀᴀɴɢᴇ ꜰɪʀᴇ ɢʟᴏᴡ  
+
+ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴇᴅɢᴇꜱ ɢʟᴏᴡɪɴɢ ᴡɪᴛʜ ꜰʟᴀᴍᴇ  
+
+ᴍᴀɪɴ ᴇʟᴇᴍᴇɴᴛ: ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ɢᴀᴍɪɴɢ ᴘʀᴏꜰɪʟᴇ ᴜɪ ɪꜱ ꜰᴀʟʟᴇɴ ᴏɴᴛᴏ ᴛʜᴇ ɢʀᴏᴜɴᴅ  
+
+ᴘᴀʀᴛɪᴀʟʟʏ ᴇᴍʙᴇᴅᴅᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ᴄʀᴀᴄᴋᴇᴅ ꜰʟᴏᴏʀ  
+
+ᴛʜᴇ ᴘʀᴏꜰɪʟᴇ ᴘᴀɴᴇʟ ɪꜱ ᴄʀᴀᴄᴋᴇᴅ ᴀɴᴅ ɢʟᴏᴡɪɴɢ ᴡɪᴛʜ ꜰɪʀᴇ ᴇᴅɢᴇꜱ  
+
+ʟɪɢʜᴛɪɴɢ: ɪɴᴛᴇɴꜱᴇ ᴠᴏʟᴜᴍᴇᴛʀɪᴄ ʟɪɢʜᴛɪɴɢ, ᴏʀᴀɴɢᴇ ꜰɪʀᴇ ɢʟᴏᴡ + ᴄᴏᴏʟ ᴅᴀʏʟɪɢʜᴛ  
+
+ᴀᴛᴍᴏꜱᴘʜᴇʀᴇ: ꜱᴍᴏᴋᴇ, ᴀꜱʜ, ꜱᴘᴀʀᴋꜱ, ᴅᴜꜱᴛ, ʜᴇᴀᴛ ᴅɪꜱᴛᴏʀᴛɪᴏɴ  
+
+ꜱᴛʏʟᴇ: ʜʏᴘᴇʀ-ʀᴇᴀʟɪꜱᴛɪᴄ ᴀᴀᴀ ɢᴀᴍᴇ ʀᴇɴᴅᴇʀ, ᴜɴʀᴇᴀʟ ᴇɴɢɪɴᴇ 5  
+
+ᴀꜱᴘᴇᴄᴛ ʀᴀᴛɪᴏ: --ᴀʀ 3:4 --ǫᴜᴀʟɪᴛʏ 2
+</div>
+
+<button onclick="copyText('p2',this)">Copy</button>
+
+<div class="card">
+<img src="https://image2url.com/r2/default/images/1774884684294-8769a221-35b4-4b47-85ae-52005178ae41.png">
+
+<div class="prompt" id="p3">
+ᴀ ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ ᴀɴɢʟᴇ ᴘᴇʀꜱᴘᴇᴄᴛɪᴠᴇ, ᴄɪɴᴇᴍᴀᴛɪᴄ ᴜʟᴛʀᴀ ʀᴇᴀʟɪꜱᴛɪᴄ ɪᴍᴀɢᴇ ᴏꜰ ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ᴄʜᴀʀᴀᴄᴛᴇʀ ꜱɪᴅᴇ ᴠɪᴇᴡ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍ ᴅʀᴇꜱꜱ ᴀꜱ ᴜᴘʟᴏᴀᴅᴇᴅ. ʜᴇ ɪꜱ ʟᴏᴏᴋɪɴɢ ᴅᴏᴡɴ ꜱᴏᴍʙᴇʀʟʏ ᴀɴᴅ ʜᴏʟᴅɪɴɢ ᴀ ʜᴇᴀᴠʏ ᴍᴇᴛᴀʟ ᴄʜᴀɪɴ ɪɴ ʜɪꜱ ʜᴀɴᴅ. ʜɪꜱ ᴏɴᴇ ꜱᴛᴇᴘ ʙᴀᴄᴋ ꜰʀᴏᴍ ᴀɴᴏᴛʜᴇʀ ᴡᴀʟᴋɪɴɢ ꜱᴛʏʟᴇ.  
+
+ʟᴏᴏᴍɪɴɢ ᴅɪʀᴇᴄᴛʟʏ ʙᴇʜɪɴᴅ ʜɪᴍ ɪꜱ ᴀ ᴍᴀꜱꜱɪᴠᴇ, ꜱᴘᴇᴄᴛʀᴀʟ ᴡʜɪᴛᴇ ᴅᴇᴍᴏɴ ᴇɴᴛɪᴛʏ ᴡɪᴛʜ ʟᴀʀɢᴇ ꜰᴇᴀᴛʜᴇʀᴇᴅ ᴡɪɴɢꜱ, ᴄᴜʀᴠᴇᴅ ʜᴏʀɴꜱ, ᴀɴᴅ ɢʟᴏᴡɪɴɢ ʀᴇᴅ ᴇʏᴇꜱ. ᴛʜᴇ ᴇɴᴛɪᴛʏ ʜᴀꜱ ᴘᴀʟᴇ, ᴛᴇxᴛᴜʀᴇᴅ ꜱᴋɪɴ ᴀɴᴅ ʀᴀᴅɪᴀᴛᴇꜱ ᴀ ɢʜᴏꜱᴛʟʏ ᴡʜɪᴛᴇ ᴀᴜʀᴀ.  
+
+ꜱʜᴏᴛ ɪꜱ ᴛᴀᴋᴇɴ ꜰʀᴏᴍ ʟᴇꜰᴛ ᴛᴜʀɴᴏᴠᴇʀ. ᴛʜᴇ ʙᴀᴄᴋɢʀᴏᴜɴᴅ ɪꜱ ᴅᴀʀᴋ ᴀɴᴅ ꜰɪʟʟᴇᴅ ᴡɪᴛʜ ꜱᴡɪʀʟɪɴɢ ʙʟᴀᴄᴋ ᴍɪꜱᴛ, ᴄʀᴇᴀᴛɪɴɢ ʜɪɢʜ ᴄᴏɴᴛʀᴀꜱᴛ ʙᴇᴛᴡᴇᴇɴ ᴛʜᴇ ᴅᴀʀᴋ ꜱᴜɪᴛ ᴏꜰ ᴛʜᴇ ᴍᴀɴ ᴀɴᴅ ᴛʜᴇ ᴡʜɪᴛᴇ ʙʀɪɢʜᴛɴᴇꜱꜱ ᴏꜰ ᴛʜᴇ ᴅᴇᴍᴏɴ.  
+
+16ᴋ ʀᴇꜱᴏʟᴜᴛɪᴏɴ, ʜɪɢʜ ǫᴜᴀʟɪᴛʏ. ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ ᴀɴɢʟᴇ ꜱʜᴏᴛ.  
+
+ɪɴ ᴛʜᴇ ʀᴀᴛɪᴏ ᴏꜰ 3:4, ᴛʜᴇ ɢʀᴏᴜɴᴅ ɪꜱ ᴏꜰ ꜰᴏɢ & ᴄʀᴀᴄᴋᴇᴅ. ᴘʟᴀᴄᴇᴅ ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ᴘʀᴏꜰɪʟᴇ ʟᴇꜰᴛ ᴛᴜʀɴᴏᴠᴇʀ ʙᴇꜱɪᴅᴇ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ.  
+
+3ᴅ ɢʟᴏᴡɪɴɢ, ꜰᴜʟʟʏ ᴠɪꜱɪʙʟᴇ: ɴᴀᴍᴇ, ɪᴠʟ, ꜱᴛᴀᴛᴇꜱ, ɪᴄᴏɴꜱ — ᴇᴠᴇʀʏᴛʜɪɴɢ. ᴛʜᴇ ᴘʀᴏꜰɪʟᴇ ɪꜱ ɢᴀɪɴᴛ, ᴛʜɪᴄᴋ ᴇᴅɢᴇꜱ, ᴅɪɢɢᴇᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜɴᴅ, ɢᴏᴛ ᴄʀᴀᴄᴋᴇᴅ & ꜱʜɪɴɪɴɢ.
+</div>
+
+<button onclick="copyText('p2',this)">Copy</button>
+
+
+<div class="card">
+  <img src="https://image2url.com/r2/default/images/1774928492700-66b38c4c-1993-4d23-a3c9-a5d8f1f4b151.png" alt="AI Image">
+  <div class="card-content">
+    <div class="prompt" id="prompt_4">
+ᴜʟᴛʀᴀ-ᴄɪɴᴇᴍᴀᴛɪᴄ ᴇxᴛʀᴇᴍᴇ ᴄʟᴏꜱᴇ-ᴜᴘ ᴘᴇʀꜱᴘᴇᴄᴛɪᴠᴇ, ᴠᴇʀᴛɪᴄᴀʟ 3:4 ᴄᴏᴍᴘᴏꜱɪᴛɪᴏɴ, ʜʏᴘᴇʀ-ʀᴇᴀʟɪꜱᴛɪᴄ 8ᴋ ᴜɴʀᴇᴀʟ ᴇɴɢɪɴᴇ 5 ʀᴇɴᴅᴇʀ.  
+
+ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ɢᴀᴍɪɴɢ ᴄʜᴀʀᴀᴄᴛᴇʀ (ᴜꜱᴇ 100% ᴇxᴀᴄᴛ ᴏᴜᴛꜰɪᴛ) ᴇxᴛᴇɴᴅɪɴɢ ʜɪꜱ ʜᴀɴᴅ ᴛᴏᴡᴀʀᴅ ᴛʜᴇ ᴄᴀᴍᴇʀᴀ, ʜᴏʟᴅɪɴɢ ᴀ ɢʟᴏᴡɪɴɢ ꜰᴜᴛᴜʀɪꜱᴛɪᴄ ᴘʀᴏꜰɪʟᴇ ᴄᴀʀᴅ / ɪᴅ-ꜱᴛʏʟᴇ ᴄᴀʀᴅ ᴠᴇʀʏ ᴄʟᴏꜱᴇ ᴛᴏ ᴛʜᴇ ʟᴇɴꜱ, ᴍᴀᴋɪɴɢ ᴛʜᴇ ᴄᴀʀᴅ ꜱʜᴀʀᴘ ᴡʜɪʟᴇ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ'ꜱ ꜰᴀᴄᴇ ꜱʟɪɢʜᴛʟʏ ʙʟᴜʀʀᴇᴅ ɪɴ ᴛʜᴇ ʙᴀᴄᴋɢʀᴏᴜɴᴅ.  
+
+ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴘʀᴏᴘᴇʀʟʏ ɢʀᴀʙꜱ ᴛʜᴇ ᴘʀᴏꜰɪʟᴇ & ᴏɴᴇ ʜᴀɴᴅ ʜᴏʟᴅɪɴɢ ᴀɴ ᴀxᴇ ꜰʟᴀᴍɪɴɢ ʙʀɪɢʜᴛ ʙᴇʜɪɴᴅ ʜɪꜱ ꜱʜᴏᴜʟᴅᴇʀ, ᴅᴏᴍɪɴᴀɴᴛ ᴘᴏꜱᴇ.  
+
+ᴘᴏꜱᴇ: ʜᴀɴᴅ ᴅᴏᴍɪɴᴀᴛɪɴɢ ᴛʜᴇ ꜰᴏʀᴇɢʀᴏᴜɴᴅ, ꜰɪɴɢᴇʀꜱ ɢʀɪᴘᴘɪɴɢ ᴛʜᴇ ᴄᴀʀᴅ ɢʟᴏᴡɪɴɢ ᴘɪɴᴋ ᴛᴏᴡᴀʀᴅ ᴛʜᴇ ᴠɪᴇᴡᴇʀ, ᴄᴏɴꜰɪᴅᴇɴᴛ ᴍʏꜱᴛᴇʀɪᴏᴜꜱ ᴠɪʙᴇ.  
+
+ʙᴀᴄᴋɢʀᴏᴜɴᴅ: ᴀ ᴅᴇꜱᴛʀᴏʏᴇᴅ ᴅᴀʀᴋ ꜰᴏʀᴇꜱᴛ ʙᴀᴛᴛʟᴇꜰɪᴇʟᴅ, ʙʀᴏᴋᴇɴ ᴛʀᴇᴇꜱ, ʙᴜʀɴɪɴɢ ʙʀᴀɴᴄʜᴇꜱ, ꜱᴄᴀᴛᴛᴇʀᴇᴅ ᴅᴇʙʀɪꜱ ᴀɴᴅ ꜰʟᴀᴍᴇꜱ ᴀᴄʀᴏꜱꜱ ᴛʜᴇ ɢʀᴏᴜɴᴅ.  
+
+ᴇꜰꜰᴇᴄᴛꜱ: ᴇᴍʙᴇʀꜱ ᴀɴᴅ ꜰʟᴀᴍᴇ ᴅʀᴏᴘʟᴇᴛꜱ ꜰᴀʟʟɪɴɢ ꜰʀᴏᴍ ᴛʜᴇ ꜱᴋʏ, ᴅʀɪꜰᴛɪɴɢ ꜱᴍᴏᴋᴇ, ɢʟᴏᴡɪɴɢ ꜱᴘᴀʀᴋꜱ ᴀɴᴅ ᴀꜱʜ ᴘᴀʀᴛɪᴄʟᴇꜱ ꜰʟᴏᴀᴛɪɴɢ ɪɴ ᴛʜᴇ ᴀɪʀ.  
+
+ʟɪɢʜᴛɪɴɢ: ᴅʀᴀᴍᴀᴛɪᴄ ꜰɪʀᴇ ɢʟᴏᴡ ꜰʀᴏᴍ ᴛʜᴇ ꜰᴏʀᴇꜱᴛ ꜰʟᴀᴍᴇꜱ ᴍɪxᴇᴅ ᴡɪᴛʜ ᴅᴀʀᴋ ꜱᴍᴏᴋʏ ꜱʜᴀᴅᴏᴡꜱ, ᴄɪɴᴇᴍᴀᴛɪᴄ ʀɪᴍ ʟɪɢʜᴛɪɴɢ.  
+
+AAA ɢᴀᴍᴇ ᴄɪɴᴇᴍᴀᴛɪᴄ ʀᴇɴᴅᴇʀ, ᴜɴʀᴇᴀʟ ᴇɴɢɪɴᴇ ʟɪɢʜᴛɪɴɢ, ꜱʜᴀʀᴘ ꜰᴏᴄᴜꜱ ᴏɴ ᴛʜᴇ ʜᴀɴᴅ/ᴄᴀʀᴅ, ꜱʜᴀʟʟᴏᴡ ᴅᴇᴘᴛʜ ᴏꜰ ꜰɪᴇʟᴅ, ᴅʀᴀᴍᴀᴛɪᴄ ᴀᴛᴍᴏꜱᴘʜᴇʀᴇ.  
+
+ᴀꜱᴘᴇᴄᴛ ʀᴀᴛɪᴏ: --ᴀʀ 3:4...
+
+    </div>
+    <div class="buttons">
+      <button class="copy-btn" onclick="copyPrompt('prompt_4')">Copy Prompt</button>
+      
+      <div class="card">  
+  <img src="https://image2url.com/r2/default/images/1774929644057-c82a3133-3174-4434-90d8-723afa43ae63.png" alt="AI Image">  
+  <div class="card-content">  
+    <div class="prompt" iD="prompt_5">  
+ᴄʀᴇᴀᴛᴇ ᴀɴ ᴜʟᴛʀᴀ-ᴄɪɴᴇᴍᴀᴛɪᴄ ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ ᴀɴɢʟᴇ ꜱʜᴏᴛ, 8ᴋ ʀᴇꜱᴏʟᴜᴛɪᴏɴ ꜱᴄᴇɴᴇ. ᴜꜱᴇ ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴘʜᴏᴛᴏ ᴀꜱ ᴛʜᴇ ᴍᴀɪɴ ꜱᴜʙᴊᴇᴄᴛ.    ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɪꜱ ɪɴ ᴀ ʜᴏᴠᴇʀɪɴɢ ʜᴇʀᴏɪᴄ ꜱᴛᴀɴᴄᴇ ꜱʟɪɢʜᴛʟʏ ᴀʙᴏᴠᴇ ᴛʜᴇ ɢʀᴏᴜɴᴅ, ᴡɪᴛʜ ꜰɪꜱᴛꜱ ᴄʟᴇɴᴄʜᴇᴅ ᴅᴏᴡɴᴡᴀʀᴅ, ʙᴏᴅʏ ᴛᴇɴꜱᴇ, ᴘᴏᴡᴇʀꜰᴜʟ, ᴀɴᴅ ᴅᴏᴍɪɴᴀɴᴛ ᴀꜱ ɪꜰ ᴄʜᴀʀɢᴇᴅ ᴡɪᴛʜ ᴇɴᴇʀɢʏ.
+
+ʙᴇʜɪɴᴅ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ, ɪɴᴄʟᴜᴅᴇ ᴛʜᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ᴘʀᴏꜰɪʟᴇ ɪᴍᴀɢᴇ ᴀꜱ ᴀ ʟᴀʀɢᴇ ʜᴏʟᴏɢʀᴀᴘʜɪᴄ ꜱᴇᴍɪ-ᴛʀᴀɴꜱᴘᴀʀᴇɴᴛ ᴘʀᴏᴊᴇᴄᴛɪᴏɴ, ꜰʟᴏᴀᴛɪɴɢ ɪɴ ᴛʜᴇ ʙᴀᴄᴋɢʀᴏᴜɴᴅ. ɪᴛ ᴍᴜꜱᴛ ʀᴇᴍᴀɪɴ ᴜɴᴄʜᴀɴɢᴇᴅ, ꜰᴜʟʟʏ ᴠɪꜱɪʙʟᴇ, ᴀɴᴅ ʀᴇᴀᴅᴀʙʟᴇ, ᴀᴘᴘᴇᴀʀɪɴɢ ʟɪᴋᴇ ᴀ ꜰᴜᴛᴜʀɪꜱᴛɪᴄ ᴅɪɢɪᴛᴀʟ ᴅɪꜱᴘʟᴀʏ.
+
+ᴅᴇᴇᴘ ʙʟᴀᴄᴋ ꜱᴍᴏᴋɪɴɢ ʙᴀᴄᴋɢʀᴏᴜɴᴅ, ᴀᴅᴅ ᴅʀᴀᴍᴀᴛɪᴄ ᴄɪɴᴇᴍᴀᴛɪᴄ ʟɪɢʜᴛɪɴɢ, ᴠᴏʟᴜᴍᴇᴛʀɪᴄ ʟɪɢʜᴛ ʀᴀʏꜱ, ꜱᴜʙᴛʟᴇ ᴘᴀʀᴛɪᴄʟᴇꜱ ɪɴ ᴛʜᴇ ᴀɪʀ, ᴅᴇᴘᴛʜ ᴏꜰ ꜰɪᴇʟᴅ, ʜɪɢʜ-ᴄᴏɴᴛʀᴀꜱᴛ ᴀᴄᴛɪᴏɴ-ᴍᴏᴠᴇ ᴀᴛᴍᴏꜱᴘʜᴇʀᴇ.
+
+ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ꜱʜᴏᴜʟᴅ ʙᴇ ꜱʜᴀʀᴘʟʏ ɪɴ ꜰᴏᴄᴜꜱ, ᴡɪᴛʜ ɢʟᴏᴡɪɴɢ ᴇᴅɢᴇ ʜɪɢʜʟɪɢʜᴛꜱ ᴀɴᴅ ᴀ ꜰᴀɪɴᴛ ᴇɴᴇʀɢʏ ᴀᴜʀᴀ, ᴡʜɪʟᴇ ᴛʜᴇ ʜᴏʟᴏɢʀᴀᴍ ꜱᴏꜰᴛʟʏ ɢʟᴏᴡꜱ ʙᴇʜɪɴᴅ ᴛʜᴇᴍ.
+
+ꜱᴛʏʟᴇ: ʜɪɢʜ-ʙᴜᴅɢᴇᴛ ꜱᴄɪ-ꜰɪ ᴀᴄᴛɪᴏɴ ᴍᴏᴠɪᴇ ᴘᴏꜱᴛᴇʀ, ᴜʟᴛʀᴀ-ᴅᴇᴛᴀɪʟᴇᴅ, ʀᴇᴀʟɪꜱᴛɪᴄ ᴛᴇxᴛᴜʀᴇꜱ, ꜱʜᴀʀᴘ ꜰᴏᴄᴜꜱ, ᴇᴘɪᴄ ꜱᴄᴀʟᴇ, ᴅʏɴᴀᴍɪᴄ.
+
+ᴀꜱᴘᴇᴄᴛ ʀᴀᴛɪᴏ: --ᴀʀ 3:4
+</div>
+<div class="buttons">
+<button class="copy-btn" onclick="copyPrompt('prompt_new')">Copy Prompt</button>
+  
+<div class="card">
+  <img src="https://image2url.com/r2/default/images/1774933378752-cae58356-17ad-4fb1-aa3c-a6173ab9f70d.png" alt="AI Image">
+  
+  <div class="card-content">
+    <div class="prompt" id="prompt6">
+ᴜʟᴛʀᴀ-ᴄɪɴᴇᴍᴀᴛɪᴄ ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ ᴀɴɢʟᴇ ᴘᴇʀꜱᴘᴇᴄᴛɪᴠᴇ, ꜰᴀɴᴛᴀꜱʏ ᴀᴄᴛɪᴏɴ ꜱᴄᴇɴᴇ, 3:4 ᴀꜱᴘᴇᴄᴛ ʀᴀᴛɪᴏ, ʜʏᴘᴇʀ-ʀᴇᴀʟɪꜱᴛɪᴄ 4ᴋ ʀᴇɴᴅᴇʀ.  
+
+ᴀ ɢɪᴀɴᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴀʟᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ (ᴜꜱᴇ ᴇxᴀᴄᴛ ᴜᴘʟᴏᴀᴅᴇᴅ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴀᴘᴘᴇᴀʀᴀɴᴄᴇ & ᴏᴜᴛꜰɪᴛ), ꜱᴛᴀɴᴅɪɴɢ ɪɴ ᴛʜᴇ ᴍɪᴅᴅʟᴇ ᴏꜰ ᴛʜᴇ ᴏᴄᴇᴀɴ, ʀᴀɪꜱɪɴɢ ᴀ ᴡᴇᴀᴘᴏɴ (ꜱᴡᴏʀᴅ/ꜱᴛᴀꜰꜰ) ᴀɴᴅ ꜱᴛʀɪᴋɪɴɢ ᴅᴏᴡɴ ᴡɪᴛʜ ɪᴍᴍᴇɴꜱᴇ ꜰᴏʀᴄᴇ.  
+
+ᴀᴛ ᴛʜᴇ ᴍᴏᴍᴇɴᴛ ᴏꜰ ɪᴍᴘᴀᴄᴛ, ᴛʜᴇ ᴏᴄᴇᴀɴ ꜱᴘʟɪᴛꜱ ɪɴᴛᴏ ᴛᴡᴏ ᴍᴀꜱꜱɪᴠᴇ ᴡᴀʟʟꜱ ᴏꜰ ᴡᴀᴛᴇʀ, ᴄʀᴇᴀᴛɪɴɢ ᴀ ᴅᴇᴇᴘ ᴘᴀᴛʜ ɪɴ ᴛʜᴇ ᴄᴇɴᴛᴇʀ.  
+
+ꜰʀᴀᴍɪɴɢ: ʟᴏᴡ ᴀɴɢʟᴇ ꜱʜᴏᴛ, ꜱʟɪɢʜᴛʟʏ ᴅɪꜱᴛᴀɴᴛ ᴛᴏ ꜱʜᴏᴡ ꜱᴄᴀʟᴇ ᴏꜰ ɢɪᴀɴᴛ ᴀɴᴅ ᴏᴄᴇᴀɴ ꜱᴘʟɪᴛ.  
+
+ʙᴀᴄᴋɢʀᴏᴜɴᴅ: ꜱᴛᴏʀᴍʏ ꜱᴋʏ, ᴅᴀʀᴋ ᴄʟᴏᴜᴅꜱ, ʟɪɢʜᴛɴɪɴɢ, ᴄɪɴᴇᴍᴀᴛɪᴄ ꜰᴏɢ.  
+
+ᴇꜰꜰᴇᴄᴛꜱ: ᴍᴀꜱꜱɪᴠᴇ ᴡᴀᴛᴇʀ ꜱᴘʟᴀꜱʜ, ᴡᴀᴠᴇꜱ ꜰʀᴏᴢᴇɴ ᴍɪᴅ-ᴀɪʀ, ɢʟᴏᴡɪɴɢ ᴇɴᴇʀɢʏ ꜱʜᴏᴄᴋᴡᴀᴠᴇ ꜰʀᴏᴍ ɪᴍᴘᴀᴄᴛ, ᴘᴀʀᴛɪᴄʟᴇꜱ, ᴍɪꜱᴛ, ʀᴇꜰʟᴇᴄᴛɪᴏɴꜱ.  
+
+ʟɪɢʜᴛɪɴɢ: ᴅʀᴀᴍᴀᴛɪᴄ ʙʟᴜᴇ + ᴡʜɪᴛᴇ ʟɪɢʜᴛɴɪɴɢ ɢʟᴏᴡ, ʜɪɢʜ ᴄᴏɴᴛʀᴀꜱᴛ ꜱʜᴀᴅᴏᴡꜱ.  
+
+ᴍᴏᴏᴅ: ɢᴏᴅ-ʟɪᴋᴇ ᴘᴏᴡᴇʀ, ᴍʏᴛʜɪᴄᴀʟ, ᴇᴘɪᴄ ᴄɪɴᴇᴍᴀᴛɪᴄ ᴍᴏᴍᴇɴᴛ.  
+
+ꜱᴛʏʟᴇ: ᴜʟᴛʀᴀ-ᴅᴇᴛᴀɪʟᴇᴅ, ᴍᴏᴠɪᴇ ꜱᴄᴇɴᴇ, ʜɪɢʜ ꜱᴄᴀʟᴇ, ᴅʀᴀᴍᴀᴛɪᴄ ᴇxᴛʀᴇᴍᴇ ʟᴏᴡ ᴀɴɢʟᴇ ꜱʜᴏᴛ.  
+
+ᴀꜱᴘᴇᴄᴛ ʀᴀᴛɪᴏ: --ᴀʀ 3:4
+    </div>
+    <div class="buttons">
+      <button class="copy-btn" onclick="copyPrompt('prompt4')">Copy Prompt</button>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+
+/* LOADER */
+let text="𝐀𝚒 ᴩʀᴏᴍᴛ ꜰꜰ";
+let i=0;
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,80);
+}else{
+document.getElementById("line").style.width="120px";
+setTimeout(()=>document.getElementById("loader").style.display="none",1000);
+}
+}
+typing();
+
+/* COPY */
+function copyText(id,btn){
+let text=document.getElementById(id).innerText;
+navigator.clipboard.writeText(text);
+btn.innerText="Copied ✅";
+setTimeout(()=>btn.innerText="Copy",1500);
+}
+
+/* LIKE */
+function like(btn){
+let span=btn.querySelector("span");
+
+if(btn.classList.contains("liked")){
+btn.classList.remove("liked");
+span.innerText="0";
+}else{
+btn.classList.add("liked");
+span.innerText="1";
+}
+}
+
+/* SAVE */
+function save(btn){
+if(btn.classList.contains("saved")){
+btn.classList.remove("saved");
+btn.style.background="rgba(0,255,255,0.1)";
+}else{
+btn.classList.add("saved");
+btn.style.background="cyan";
+}
+}
+
+/* SHARE */
+function share(){
+if(navigator.share){
+navigator.share({
+title:"AI Prompt",
+text:"Check this prompt!",
+url:window.location.href
+});
+}else{
+alert("Sharing not supported");
+}
+}
+
+/* DESCRIBE */
+function describe(){
+let feedback=prompt("Write your feedback:");
+if(feedback){
+alert("Thanks for your feedback!");
+}
+}
+
+</script>
+
+</body>
+</html>
